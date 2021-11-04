@@ -1,0 +1,16 @@
+C:\Users\Arthur Delmas\Documents\DIO\workspace\op-bancarias\OpBancarias\app.bank\bin\Debug\net5.0\app.bank.exe
+C:\Users\Arthur Delmas\Documents\DIO\workspace\op-bancarias\OpBancarias\app.bank\bin\Debug\net5.0\app.bank.deps.json
+C:\Users\Arthur Delmas\Documents\DIO\workspace\op-bancarias\OpBancarias\app.bank\bin\Debug\net5.0\app.bank.runtimeconfig.json
+C:\Users\Arthur Delmas\Documents\DIO\workspace\op-bancarias\OpBancarias\app.bank\bin\Debug\net5.0\app.bank.runtimeconfig.dev.json
+C:\Users\Arthur Delmas\Documents\DIO\workspace\op-bancarias\OpBancarias\app.bank\bin\Debug\net5.0\app.bank.dll
+C:\Users\Arthur Delmas\Documents\DIO\workspace\op-bancarias\OpBancarias\app.bank\bin\Debug\net5.0\ref\app.bank.dll
+C:\Users\Arthur Delmas\Documents\DIO\workspace\op-bancarias\OpBancarias\app.bank\bin\Debug\net5.0\app.bank.pdb
+C:\Users\Arthur Delmas\Documents\DIO\workspace\op-bancarias\OpBancarias\app.bank\obj\Debug\net5.0\app.bank.csproj.AssemblyReference.cache
+C:\Users\Arthur Delmas\Documents\DIO\workspace\op-bancarias\OpBancarias\app.bank\obj\Debug\net5.0\app.bank.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Arthur Delmas\Documents\DIO\workspace\op-bancarias\OpBancarias\app.bank\obj\Debug\net5.0\app.bank.AssemblyInfoInputs.cache
+C:\Users\Arthur Delmas\Documents\DIO\workspace\op-bancarias\OpBancarias\app.bank\obj\Debug\net5.0\app.bank.AssemblyInfo.cs
+C:\Users\Arthur Delmas\Documents\DIO\workspace\op-bancarias\OpBancarias\app.bank\obj\Debug\net5.0\app.bank.csproj.CoreCompileInputs.cache
+C:\Users\Arthur Delmas\Documents\DIO\workspace\op-bancarias\OpBancarias\app.bank\obj\Debug\net5.0\app.bank.dll
+C:\Users\Arthur Delmas\Documents\DIO\workspace\op-bancarias\OpBancarias\app.bank\obj\Debug\net5.0\ref\app.bank.dll
+C:\Users\Arthur Delmas\Documents\DIO\workspace\op-bancarias\OpBancarias\app.bank\obj\Debug\net5.0\app.bank.pdb
+C:\Users\Arthur Delmas\Documents\DIO\workspace\op-bancarias\OpBancarias\app.bank\obj\Debug\net5.0\app.bank.genruntimeconfig.cache
