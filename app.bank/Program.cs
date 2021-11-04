@@ -7,8 +7,6 @@ namespace app.bank
         static void Main(string[] args)
         {
             //Conta minhaConta = new Conta();
-            //minhaConta.Nome = "Arthur";
-
         }
     }
 }
