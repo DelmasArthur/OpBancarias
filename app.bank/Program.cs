@@ -6,7 +6,9 @@ namespace app.bank
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //Conta minhaConta = new Conta();
+            //minhaConta.Nome = "Arthur";
+
         }
     }
 }
