@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace app.bank
 {
     class Program
     {
+        static List<Conta> listContas= new List<Conta>();
+
         static void Main(string[] args)
         {
             string opcaoUsuario = ObterOpcaoUsuario();
@@ -15,7 +18,7 @@ namespace app.bank
                         //ListarContas();
                         break;
                     case "2":
-                        //CadastrarConta();
+                        CadastrarConta();
                         break;
                     case "3":
                         //Transferir();
@@ -37,6 +40,33 @@ namespace app.bank
             Console.WriteLine("Obrigado por utilizar nossos serviços!");
             Console.WriteLine("Volte Sempre!");
             Console.WriteLine();
+        }
+
+        private static void CadastrarConta()
+        {
+            Console.WriteLine("Cadastrar Nova Conta");
+            Console.WriteLine();
+
+            Console.WriteLine("Digite sua opção do tipo de conta:");
+            Console.WriteLine("1 - Pessoa Física");
+            Console.WriteLine("2 - Pessoa Jurídica");
+            int entradaTipoConta = int.Parse(Console.ReadLine());
+            
+            Console.WriteLine();
+            Console.WriteLine("Digite o nome do cliente: ");
+            string entradaNome = Console.ReadLine();
+
+            Console.WriteLine();
+            Console.WriteLine("Digite o crédito inicial do cliente: ");
+            double entradaCredito = double.Parse(Console.ReadLine());
+
+            Conta novaConta = new Conta(    tipoConta: (TipoConta)entradaTipoConta,
+                                            nome: entradaNome,
+                                            saldo: 0, //a conta inicia com saldo zerado
+                                            credito: entradaCredito
+                                        );
+
+            listContas.Add(novaConta);            
         }
 
         private static string ObterOpcaoUsuario()

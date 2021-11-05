@@ -10,12 +10,12 @@ namespace app.bank
         private string Nome {get; set;}
 
         //Construtor
-        public Conta(TipoConta tipoConta, double saldo, double credito, string nome)
+        public Conta(TipoConta tipoConta, string nome, double saldo, double credito)
         {
             this.TipoConta = tipoConta;
+            this.Nome = nome;
             this.Saldo = saldo;
             this.Credito = credito;
-            this.Nome = nome;
         }
 
         //Metodos
