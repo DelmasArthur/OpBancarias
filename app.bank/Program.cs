@@ -15,7 +15,7 @@ namespace app.bank
                 switch (opcaoUsuario)
                 {
                     case "1":
-                        //ListarContas();
+                        ListarContas();
                         break;
                     case "2":
                         CadastrarConta();
@@ -42,6 +42,23 @@ namespace app.bank
             Console.WriteLine();
         }
 
+        private static void ListarContas()
+        {   
+            Console.WriteLine("Listar Contas");
+            if(listContas.Count == 0)
+            {
+                Console.WriteLine("Nenhuma conta cadastrada.");
+                return;
+            }
+
+            for(int i=0; i<listContas.Count;i++)
+            {
+                Conta conta = listContas[i];
+                Console.Write("#{0} - ", i);
+                Console.WriteLine(conta);
+            }
+        }
+
         private static void CadastrarConta()
         {
             Console.WriteLine("Cadastrar Nova Conta");
@@ -50,8 +67,15 @@ namespace app.bank
             Console.WriteLine("Digite sua opção do tipo de conta:");
             Console.WriteLine("1 - Pessoa Física");
             Console.WriteLine("2 - Pessoa Jurídica");
-            int entradaTipoConta = int.Parse(Console.ReadLine());
+            Console.WriteLine("X - Voltar ao menu inicial");
+            Console.Write("Opção: ");
+            string optConta = Console.ReadLine();
             
+            if(optConta.ToUpper() == "X")
+                return;
+
+            int entradaTipoConta = int.Parse(optConta);
+
             Console.WriteLine();
             Console.WriteLine("Digite o nome do cliente: ");
             string entradaNome = Console.ReadLine();
@@ -84,7 +108,8 @@ namespace app.bank
             Console.WriteLine("C - Limpar Tela");
             Console.WriteLine("X - Sair");
             Console.WriteLine();
-
+            
+            Console.Write("Opção: ");
             string opcaoUsuario = Console.ReadLine().ToUpper();
             Console.WriteLine();
             return opcaoUsuario;
