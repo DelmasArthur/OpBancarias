@@ -50,7 +50,7 @@ namespace app.bank
             Console.WriteLine("Digite o numero da conta de destino: ");
             int indiceContaDestino = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Digite o valor do depósito: ");
+            Console.WriteLine("Digite o valor da transferência: ");
             double valorTransferencia = int.Parse(Console.ReadLine());
             
             listContas[indiceContaOrigem].Transferir(valorTransferencia, listContas[indiceContaDestino]);

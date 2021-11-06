@@ -35,7 +35,7 @@ namespace app.bank
         public void Depositar(double valorDeposito)
         {
             this.Saldo += valorDeposito;
-            Console.WriteLine("Saldo atual da conta de {0} é de {1}", this.Nome, this.Saldo);
+            Console.WriteLine("Saldo atual da conta de {0} é de R${1}", this.Nome, this.Saldo);
         }
 
         public void Transferir(double valorTransferencia, Conta contaDestino)
@@ -51,8 +51,8 @@ namespace app.bank
             string retorno = "";
             retorno += "Tipo Conta " + this.TipoConta + " | ";
             retorno += "Nome " + this.Nome + " | ";
-            retorno += "Saldo " + this.Saldo + " | ";
-            retorno += "Crédito " + this.Credito + " | ";
+            retorno += "Saldo R$" + this.Saldo + " | ";
+            retorno += "Crédito R$" + this.Credito + " | ";
             return retorno;
         }
 
