@@ -28,7 +28,7 @@ namespace app.bank
                 return false;
             }
             this.Saldo -= valorSaque;
-            Console.WriteLine("Saldo atual da conta de {0} é de {1}", this.Nome, this.Saldo);
+            Console.WriteLine("Saldo atual da conta de {0} é de R${1}", this.Nome, this.Saldo);
             return true;
         }
 

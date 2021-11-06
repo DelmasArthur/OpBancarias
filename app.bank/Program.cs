@@ -24,10 +24,10 @@ namespace app.bank
                         //Transferir();
                         break;
                     case "4":
-                        //Sacar();
+                        Sacar();
                         break;
                     case "5":
-                        //Depositar();
+                        Depositar();
                         break;
                     case "C":
                         Console.Clear();
@@ -39,6 +39,30 @@ namespace app.bank
             }
             Console.WriteLine("Obrigado por utilizar nossos serviços!");
             Console.WriteLine("Volte Sempre!");
+            Console.WriteLine();
+        }
+
+        private static void Depositar()
+        {
+            Console.WriteLine("Digite o numero da conta: ");
+            int indiceConta = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o valor do depósito: ");
+            int valorDeposito = int.Parse(Console.ReadLine());
+
+            listContas[indiceConta].Depositar(valorDeposito);
+            Console.WriteLine();
+        }
+
+        private static void Sacar()
+        {
+            Console.WriteLine("Digite o numero da conta: ");
+            int indiceConta = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o valor do saque: ");
+            int valorSaque = int.Parse(Console.ReadLine());
+
+            listContas[indiceConta].Sacar(valorSaque);
             Console.WriteLine();
         }
 
