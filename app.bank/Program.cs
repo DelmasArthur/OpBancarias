@@ -21,7 +21,7 @@ namespace app.bank
                         CadastrarConta();
                         break;
                     case "3":
-                        //Transferir();
+                        Transferir();
                         break;
                     case "4":
                         Sacar();
@@ -42,13 +42,28 @@ namespace app.bank
             Console.WriteLine();
         }
 
+        private static void Transferir()
+        {
+            Console.WriteLine("Digite o numero da conta de origem: ");
+            int indiceContaOrigem = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o numero da conta de destino: ");
+            int indiceContaDestino = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o valor do depósito: ");
+            double valorTransferencia = int.Parse(Console.ReadLine());
+            
+            listContas[indiceContaOrigem].Transferir(valorTransferencia, listContas[indiceContaDestino]);
+            Console.WriteLine();
+        }
+
         private static void Depositar()
         {
             Console.WriteLine("Digite o numero da conta: ");
             int indiceConta = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite o valor do depósito: ");
-            int valorDeposito = int.Parse(Console.ReadLine());
+            double valorDeposito = int.Parse(Console.ReadLine());
 
             listContas[indiceConta].Depositar(valorDeposito);
             Console.WriteLine();
@@ -60,7 +75,7 @@ namespace app.bank
             int indiceConta = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite o valor do saque: ");
-            int valorSaque = int.Parse(Console.ReadLine());
+            double valorSaque = int.Parse(Console.ReadLine());
 
             listContas[indiceConta].Sacar(valorSaque);
             Console.WriteLine();
